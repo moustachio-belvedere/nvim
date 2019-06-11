@@ -25,4 +25,4 @@ call plug#end()
 set background=dark
 colorscheme material
 
-:source secondit.vim
+:cd C:/Users/J/Documents
