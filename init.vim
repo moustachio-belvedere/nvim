@@ -22,7 +22,14 @@ Plug 'ncm2/ncm2-jedi'
 
 call plug#end()
 
+" UI Theme options
 set background=dark
 colorscheme material
 
+" set tab up for 2 spaces always
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" set home dir
 :cd C:/Users/J/Documents
