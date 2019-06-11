@@ -25,4 +25,4 @@ call plug#end()
 set background=dark
 colorscheme material
 
-:cd ~\OneDrive\Documents\
+:source secondit.vim
