@@ -32,4 +32,7 @@ set tabstop=2
 set shiftwidth=2
 
 " set home dir
-:cd C:/Users/J/Documents
+:cd C:/Projects/11_Louis/
+
+" set working dir to be file currently editing
+set autochdir
