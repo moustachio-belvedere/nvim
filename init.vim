@@ -36,3 +36,6 @@ set shiftwidth=2
 
 " set working dir to be file currently editing
 set autochdir
+
+" add line number margin
+set number
