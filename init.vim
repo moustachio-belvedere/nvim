@@ -53,3 +53,6 @@ set number
 
 " convenient mapping for :nohls
 nnoremap <esc><esc> :silent! nohls<cr>
+
+" convenient mapping for :put or new-line from command mode
+map <S-Enter> o<ESC>
