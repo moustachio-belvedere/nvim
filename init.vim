@@ -32,6 +32,9 @@ call plug#end()
 set background=dark
 colorscheme material
 
+" Julia specific
+let g:default_julia_version = "1.1"
+
 " set tab up for 2 spaces always
 set expandtab
 set tabstop=2
@@ -56,3 +59,6 @@ nnoremap <esc><esc> :silent! nohls<cr>
 
 " convenient mapping for :put or new-line from command mode
 map <S-Enter> o<ESC>
+
+" add mapping for escaping insert mode with a save
+imap <c-=> <Esc>:w<CR>
