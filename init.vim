@@ -26,11 +26,14 @@ Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " Set main dir for compatibility across various computers
-:let maindir = 'C:/Projects/11_Louis/'
+let maindir = 'C:/Projects/11_Louis/'
 
 " UI Theme options
 set background=dark
 colorscheme material
+
+" Julia specific
+let g:default_julia_version = "1.1"
 
 " set tab up for 2 spaces always
 set expandtab
@@ -38,7 +41,7 @@ set tabstop=2
 set shiftwidth=2
 
 " set home dir
-:exe 'cd' maindir
+exe 'cd' maindir
 
 " set working dir to be file currently editing
 set autochdir
@@ -47,9 +50,15 @@ set autochdir
 set number
 
 " add commands for easy save and load of default session
-:let sessionlocation = maindir.'/RHEOS_misc/sessions/basetest.vim'
-:exe 'command Sdfs mks' sessionlocation
-:exe 'command Ldfs source' sessionlocation
+let sessionlocation = maindir.'/RHEOS_misc/sessions/basetest.vim'
+exe 'command Sdfs mks' sessionlocation
+exe 'command Ldfs source' sessionlocation
 
 " convenient mapping for :nohls
 nnoremap <esc><esc> :silent! nohls<cr>
+
+" convenient mapping for :put or new-line from command mode
+map <S-Enter> o<ESC>
+
+" add mapping for escaping insert mode with a save
+imap <c-=> <Esc>:w<CR>
