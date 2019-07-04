@@ -23,7 +23,13 @@ Plug 'ncm2/ncm2-jedi'
 " Multi-cursor
 Plug 'terryma/vim-multiple-cursors'
 
+" TOML Syntax
+Plug 'cespare/vim-toml'
+
 call plug#end()
+
+" YAML syntax highlighting (manually installed plug-in)
+au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim\pluggedman\yaml.vim
 
 " Set main dir for compatibility across various computers
 let maindir = 'C:/Projects/11_Louis/'
