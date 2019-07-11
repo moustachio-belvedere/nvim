@@ -26,7 +26,7 @@ Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " Set main dir for compatibility across various computers
-let maindir = 'C:/Projects/11_Louis/'
+let maindir = '~/OneDrive/Documents'
 
 " UI Theme options
 set background=dark
@@ -50,8 +50,8 @@ set autochdir
 set number
 
 " add commands for easy save and load of default session
-let sessionlocation = maindir.'/RHEOS_misc/sessions/basetest.vim'
-exe 'command Sdfs mks' sessionlocation
+let sessionlocation = maindir.'/basetest.vim'
+exe 'command -bang Sdfs mks<bang>' sessionlocation
 exe 'command Ldfs source' sessionlocation
 
 " convenient mapping for :nohls
