@@ -26,6 +26,9 @@ Plug 'terryma/vim-multiple-cursors'
 " TOML Syntax
 Plug 'cespare/vim-toml'
 
+" Rust language pack from rust-lang
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 " YAML syntax highlighting (manually installed plug-in)
