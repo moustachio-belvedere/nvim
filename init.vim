@@ -68,3 +68,9 @@ map <S-Enter> o<ESC>
 
 " add mapping for escaping insert mode with a save
 imap <c-=> <Esc>:w<CR>
+
+" disable arrow keys temporarily for learning purposes
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
