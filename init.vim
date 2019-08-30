@@ -35,8 +35,9 @@ call plug#end()
 au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim\pluggedman\yaml.vim
 
 " Set main dir for compatibility across various computers
-let maindir = 'C:/Users/J/Documents'
+" let maindir = 'C:/Users/J/Documents'
 " let maindir = '~/OneDrive/Documents'
+let maindir = 'C:/Projects/11_Louis'
 
 " UI Theme options
 set background=dark
