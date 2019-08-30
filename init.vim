@@ -29,6 +29,9 @@ Plug 'terryma/vim-multiple-cursors'
 " TOML Syntax
 Plug 'cespare/vim-toml'
 
+" Rust language pack from rust-lang
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 " YAML syntax highlighting (manually installed plug-in)
@@ -39,7 +42,9 @@ let g:vim_markdown_math = 1
 let g:vim_markdown_folding_disabled = 1
 
 " Set main dir for compatibility across various computers
-let maindir = '~/OneDrive/Documents'
+" let maindir = 'C:/Users/J/Documents'
+" let maindir = '~/OneDrive/Documents'
+let maindir = 'C:/Projects/11_Louis'
 
 " UI Theme options
 set background=dark
@@ -75,3 +80,9 @@ map <S-Enter> o<ESC>
 
 " add mapping for escaping insert mode with a save
 imap <c-=> <Esc>:w<CR>
+
+" disable arrow keys temporarily for learning purposes
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
