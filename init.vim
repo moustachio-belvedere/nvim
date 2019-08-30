@@ -26,13 +26,17 @@ Plug 'terryma/vim-multiple-cursors'
 " TOML Syntax
 Plug 'cespare/vim-toml'
 
+" Rust language pack from rust-lang
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 " YAML syntax highlighting (manually installed plug-in)
 au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim\pluggedman\yaml.vim
 
 " Set main dir for compatibility across various computers
-let maindir = 'C:/Projects/11_Louis/'
+let maindir = 'C:/Users/J/Documents'
+" let maindir = '~/OneDrive/Documents'
 
 " UI Theme options
 set background=dark
@@ -56,8 +60,8 @@ set autochdir
 set number
 
 " add commands for easy save and load of default session
-let sessionlocation = maindir.'/RHEOS_misc/sessions/basetest.vim'
-exe 'command Sdfs mks' sessionlocation
+let sessionlocation = maindir.'/basetest.vim'
+exe 'command -bang Sdfs mks<bang>' sessionlocation
 exe 'command Ldfs source' sessionlocation
 
 " convenient mapping for :nohls
