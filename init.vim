@@ -20,6 +20,9 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
 
+" Markdown Specific
+Plug 'plasticboy/vim-markdown'
+
 " Multi-cursor
 Plug 'terryma/vim-multiple-cursors'
 
@@ -34,10 +37,14 @@ call plug#end()
 " YAML syntax highlighting (manually installed plug-in)
 au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim\pluggedman\yaml.vim
 
+" Markdown syntax highlighting
+let g:vim_markdown_math = 1
+let g:vim_markdown_folding_disabled = 1
+
 " Set main dir for compatibility across various computers
 " let maindir = 'C:/Users/J/Documents'
-" let maindir = '~/OneDrive/Documents'
-let maindir = 'C:/Projects/11_Louis'
+let maindir = '~/OneDrive/Documents'
+" let maindir = 'C:/Projects/11_Louis'
 
 " UI Theme options
 set background=dark
@@ -79,3 +86,8 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+imap <Up> <Nop>
+imap <Down> <Nop>
+imap <Left> <Nop>
+imap <Right> <Nop>
