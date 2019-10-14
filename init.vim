@@ -41,36 +41,23 @@ au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim
 let g:vim_markdown_math = 1
 let g:vim_markdown_folding_disabled = 1
 
-" Set main dir for compatibility across various computers
-" let maindir = 'C:/Users/J/Documents'
-let maindir = '~/OneDrive/Documents'
-" let maindir = 'C:/Projects/11_Louis'
-
 " UI Theme options
 set background=dark
 colorscheme material
 
 " Julia specific
-let g:default_julia_version = "1.1"
+let g:default_julia_version = "1.2"
 
 " set tab up for 2 spaces always
 set expandtab
 set tabstop=2
 set shiftwidth=2
 
-" set home dir
-exe 'cd' maindir
-
 " set working dir to be file currently editing
 set autochdir
 
 " add line number margin
 set number
-
-" add commands for easy save and load of default session
-let sessionlocation = maindir.'/basetest.vim'
-exe 'command -bang Sdfs mks<bang>' sessionlocation
-exe 'command Ldfs source' sessionlocation
 
 " convenient mapping for :nohls
 nnoremap <esc><esc> :silent! nohls<cr>
