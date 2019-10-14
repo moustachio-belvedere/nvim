@@ -78,3 +78,6 @@ imap <Up> <Nop>
 imap <Down> <Nop>
 imap <Left> <Nop>
 imap <Right> <Nop>
+
+" attempted workaround for CMDER highlighting, only works after open atm
+syntax on
