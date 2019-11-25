@@ -81,3 +81,6 @@ imap <Right> <Nop>
 
 " attempted workaround for CMDER highlighting, only works after open atm
 syntax on
+
+" get windows copy/paste working, from neovim-qt github issue 327
+source $VIMRUNTIME/mswin.vim
