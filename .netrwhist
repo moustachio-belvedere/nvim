@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='C:/Projects/11_Louis'
-let g:netrw_dirhist_2='C:/Projects'
-let g:netrw_dirhist_3='C:/Projects/11_Louis/Posters'
-let g:netrw_dirhist_4='C:/Users/jonat/AppData/Local/nvim'
-let g:netrw_dirhist_5='C:/Users/jonat/.julia/dev/RHEOS'
-let g:netrw_dirhist_6='C:/Users/jonat/.julia/dev/RHEOS/src'
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='C:/Users/J/Documents/C'
+let g:netrw_dirhist_3='C:/Program Files/Neovim/bin'
+let g:netrw_dirhist_2='C:/Users/J/Documents/C'
+let g:netrw_dirhist_1='C:/Program Files/Neovim/bin'
