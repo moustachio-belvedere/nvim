@@ -46,7 +46,7 @@ set background=dark
 colorscheme material
 
 " Julia specific
-let g:default_julia_version = "1.2"
+let g:default_julia_version = "1.4"
 
 " set tab up for 2 spaces always
 set expandtab

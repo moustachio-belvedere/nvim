@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='C:/Program Files/Neovim/bin'
+let g:netrw_dirhist_5='C:/Users/J/Documents/C/GTBN'
 let g:netrw_dirhist_4='C:/Users/J/Documents/C'
 let g:netrw_dirhist_3='C:/Program Files/Neovim/bin'
 let g:netrw_dirhist_2='C:/Users/J/Documents/C'
