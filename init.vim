@@ -6,10 +6,10 @@ Plug 'kaicataldo/material.vim'
 " Julia specific
 Plug 'JuliaEditorSupport/julia-vim'
 
-" Editor
 " line indent guide
 Plug 'Yggdroot/indentLine'
-" can't remember
+
+" async lint engine
 Plug 'w0rp/ale'
 
 " Python Specific
@@ -23,19 +23,13 @@ Plug 'ncm2/ncm2-jedi'
 " Markdown Specific
 Plug 'plasticboy/vim-markdown'
 
-" Multi-cursor
-Plug 'terryma/vim-multiple-cursors'
-
-" TOML Syntax
-Plug 'cespare/vim-toml'
-
 " Rust language pack from rust-lang
 Plug 'rust-lang/rust.vim'
 
-call plug#end()
+" General Linter
+Plug 'sheerun/vim-polyglot'
 
-" YAML syntax highlighting (manually installed plug-in)
-au BufNewFile, BufRead, *.yaml,*.yml so C:\Users\louis.kaplan\AppData\Local\nbim\pluggedman\yaml.vim
+call plug#end()
 
 " Markdown syntax highlighting
 let g:vim_markdown_math = 1
@@ -83,4 +77,6 @@ imap <Right> <Nop>
 syntax on
 
 " get windows copy/paste working, from neovim-qt github issue 327
-source $VIMRUNTIME/mswin.vim
+" commenting out for now to practice doing things the Vim way
+" with proper access of system register via \"+ and \"*
+" source $VIMRUNTIME/mswin.vim
