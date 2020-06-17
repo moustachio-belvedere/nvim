@@ -31,6 +31,9 @@ Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
+" change line indent colour to be more subtle
+let g:indentLine_color_gui = '#34454E'
+
 " Markdown syntax highlighting
 let g:vim_markdown_math = 1
 let g:vim_markdown_folding_disabled = 1
