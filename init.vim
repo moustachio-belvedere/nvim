@@ -9,9 +9,6 @@ Plug 'joshdick/onedark.vim'
 " Julia specific
 Plug 'JuliaEditorSupport/julia-vim'
 
-" line indent guide
-Plug 'Yggdroot/indentLine'
-
 " async lint engine
 Plug 'w0rp/ale'
 
@@ -36,9 +33,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 
 call plug#end()
-
-" change line indent colour to be more subtle
-let g:indentLine_color_gui = '#34454E'
 
 " Markdown syntax highlighting
 let g:vim_markdown_math = 1
@@ -92,6 +86,7 @@ set autochdir
 
 " add line number margin
 set number
+set relativenumber
 
 " convenient mapping for :nohls
 nnoremap <esc><esc> :silent! nohls<cr>
