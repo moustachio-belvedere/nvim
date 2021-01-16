@@ -31,10 +31,6 @@ Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" Markdown syntax highlighting
-let g:vim_markdown_math = 1
-let g:vim_markdown_folding_disabled = 1
-
 " UI Theme options
 syntax on
 colorscheme onedark 
