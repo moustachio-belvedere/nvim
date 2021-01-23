@@ -6,24 +6,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Colour theme plugin
 Plug 'joshdick/onedark.vim'
 
-" Julia specific
-Plug 'JuliaEditorSupport/julia-vim'
-
 " async lint engine
 Plug 'w0rp/ale'
-
-" Python Specific
-Plug 'Chiel92/vim-autoformat'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-jedi'
 
 " Rust language pack from rust-lang
 Plug 'rust-lang/rust.vim'
 
-" General Linter
+" Syntax highlighter
 Plug 'sheerun/vim-polyglot'
 
 " lightline statusline plug-in
@@ -65,9 +54,6 @@ let g:lightline = {
       \   'charvaluehex': '0x%B'
       \ },
       \ }
-
-" Julia specific
-let g:default_julia_version = "1.5"
 
 " set tab up for 2 spaces always
 set expandtab
