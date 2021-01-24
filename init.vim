@@ -98,6 +98,11 @@ endfunc
 " Remove sign column unless required
 set signcolumn=auto
 
+" Powershell as vim terminal
+set shell=pwsh shellquote=( shellpipe=\| shellxquote=
+set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
+set shellredir=\|\ Out-File\ -Encoding\ UTF8
+
 """"""""""""""""""""""""""""""
 " Coc.nvim specific settings "
 """"""""""""""""""""""""""""""
