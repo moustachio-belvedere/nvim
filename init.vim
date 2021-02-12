@@ -66,6 +66,7 @@ set autochdir
 " add line number margin
 set number
 set relativenumber
+set numberwidth=1
 
 " convenient mapping for :nohls
 nnoremap <esc><esc> :silent! nohls<cr>
@@ -87,9 +88,6 @@ imap <Down> <Nop>
 imap <Left> <Nop>
 imap <Right> <Nop>
 
-" attempted workaround for CMDER highlighting, only works after open atm
-syntax on
-
 " Convenience function for cleaning up formatting
 func! CustardCleaner()
   %s/\(\S\)=\(\S\)/\1 = \2/ge | %s/\(\S\)->\(\S\)/\1 -> \2/ge | %s/\(\S\),\(\S\)/\1, \2/ge
@@ -98,10 +96,12 @@ endfunc
 " Remove sign column unless required
 set signcolumn=auto
 
-" Powershell as vim terminal
-set shell=pwsh shellquote=( shellpipe=\| shellxquote=
-set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
-set shellredir=\|\ Out-File\ -Encoding\ UTF8
+" set line number colors
+highlight LineNr guifg=black
+highlight CursorLineNr guifg=pink
+
+" set filetype for text
+au BufNewFile,BufRead *.txt set filetype=custext
 
 """"""""""""""""""""""""""""""
 " Coc.nvim specific settings "
