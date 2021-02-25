@@ -103,11 +103,17 @@ highlight CursorLineNr guifg=pink
 " set filetype for text
 au BufNewFile,BufRead *.txt set filetype=custext
 
+" make sure line endings are always Unix
+au BufNewFile,BufRead * set fileformat=unix
+
+" set capital Y analogous to capital D, yank to end of line
+nnoremap Y y$
+
 """"""""""""""""""""""""""""""
 " Coc.nvim specific settings "
 """"""""""""""""""""""""""""""
 
-"" TextEdit might fail if hidden is not set.
+" TextEdit might fail if hidden is not set.
 set hidden
 
 " Some servers have issues with backup files, see #649.
