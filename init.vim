@@ -69,7 +69,7 @@ set relativenumber
 set numberwidth=1
 
 " convenient mapping for :nohls
-nnoremap <esc><esc> :silent! nohls<cr>
+nnoremap <c-l> :silent! nohls<cr>
 
 " convenient mapping for :put or new-line from command mode
 map <S-Enter> o<ESC>
@@ -108,6 +108,12 @@ au BufNewFile,BufRead * set fileformat=unix
 
 " set capital Y analogous to capital D, yank to end of line
 nnoremap Y y$
+
+" if possible use Fira Code size 14
+set guifont=Fira\ Code:h14
+
+" use smartcase for searches
+set smartcase
 
 """"""""""""""""""""""""""""""
 " Coc.nvim specific settings "
