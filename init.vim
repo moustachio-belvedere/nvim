@@ -1,4 +1,4 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin(stdpath('config') . '/plugged')
 
 " intellisense completer and language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
