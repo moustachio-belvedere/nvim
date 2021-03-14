@@ -1,4 +1,4 @@
-plugged
-secondit.vim
+plugged/
+autoload/
 *.netrwhist
 .netrwhist
