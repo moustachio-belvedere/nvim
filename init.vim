@@ -72,26 +72,10 @@ set numberwidth=1
 nnoremap <c-l> :silent! nohls<cr>
 
 " convenient mapping for :put or new-line from command mode
-map <S-Enter> o<ESC>
+map <S-Enter> :put<cr>
 
 " add mapping for escaping insert mode with a save
 imap <c-=> <Esc>:w<CR>
-
-" disable arrow keys temporarily for learning purposes
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
-imap <Up> <Nop>
-imap <Down> <Nop>
-imap <Left> <Nop>
-imap <Right> <Nop>
-
-" Convenience function for cleaning up formatting
-func! CustardCleaner()
-  %s/\(\S\)=\(\S\)/\1 = \2/ge | %s/\(\S\)->\(\S\)/\1 -> \2/ge | %s/\(\S\),\(\S\)/\1, \2/ge
-endfunc
 
 " Remove sign column unless required
 set signcolumn=auto
@@ -113,6 +97,7 @@ nnoremap Y y$
 set guifont=Fira\ Code:h14
 
 " use smartcase for searches
+set ignorecase
 set smartcase
 
 """"""""""""""""""""""""""""""
