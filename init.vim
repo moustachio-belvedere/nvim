@@ -16,25 +16,25 @@ nnoremap Y y$
 imap <c-=> <esc>:w<CR>
 
 " editor settings
-highlight LineNr guifg=black
-highlight CursorLineNr guifg=pink
-au BufNewFile,BufRead *.txt set filetype=custext
-au BufNewFile,BufRead * set fileformat=unix
 set signcolumn=auto
 set number
 set relativenumber
 set numberwidth=1
 set autochdir
-set guifont=Fira\ Code:h14
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set ignorecase
 set smartcase
 
-" UI Theme options
+" theme
+set guifont=Fira\ Code:h14
 syntax on
 colorscheme onedark 
+" highlight LineNr guifg=black
+highlight CursorLineNr guifg=pink
+au BufNewFile,BufRead *.txt set filetype=custext
+au BufNewFile,BufRead * set fileformat=unix
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
