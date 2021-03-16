@@ -1,24 +1,36 @@
 call plug#begin(stdpath('config') . '/plugged')
-
-" intellisense completer and language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Colour theme plugin
 Plug 'joshdick/onedark.vim'
-
-" async lint engine
 Plug 'w0rp/ale'
-
-" Rust language pack from rust-lang
 Plug 'rust-lang/rust.vim'
-
-" Syntax highlighter
 Plug 'sheerun/vim-polyglot'
-
-" lightline statusline plug-in
 Plug 'itchyny/lightline.vim'
-
 call plug#end()
+
+" normal mode mappings
+nnoremap <Leader><cr> o<esc>k
+nnoremap <c-l> :silent! nohls<cr>
+nnoremap Y y$
+
+" insert mode mappings
+imap <c-=> <esc>:w<CR>
+
+" editor settings
+highlight LineNr guifg=black
+highlight CursorLineNr guifg=pink
+au BufNewFile,BufRead *.txt set filetype=custext
+au BufNewFile,BufRead * set fileformat=unix
+set signcolumn=auto
+set number
+set relativenumber
+set numberwidth=1
+set autochdir
+set guifont=Fira\ Code:h14
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set ignorecase
+set smartcase
 
 " UI Theme options
 syntax on
@@ -54,51 +66,6 @@ let g:lightline = {
       \   'charvaluehex': '0x%B'
       \ },
       \ }
-
-" set tab up for 2 spaces always
-set expandtab
-set tabstop=2
-set shiftwidth=2
-
-" set working dir to be file currently editing
-set autochdir
-
-" add line number margin
-set number
-set relativenumber
-set numberwidth=1
-
-" convenient mapping for :nohls
-nnoremap <c-l> :silent! nohls<cr>
-
-" convenient mapping for :put or new-line from command mode
-map <S-Enter> :put<cr>
-
-" add mapping for escaping insert mode with a save
-imap <c-=> <Esc>:w<CR>
-
-" Remove sign column unless required
-set signcolumn=auto
-
-" set line number colors
-highlight LineNr guifg=black
-highlight CursorLineNr guifg=pink
-
-" set filetype for text
-au BufNewFile,BufRead *.txt set filetype=custext
-
-" make sure line endings are always Unix
-au BufNewFile,BufRead * set fileformat=unix
-
-" set capital Y analogous to capital D, yank to end of line
-nnoremap Y y$
-
-" if possible use Fira Code size 14
-set guifont=Fira\ Code:h14
-
-" use smartcase for searches
-set ignorecase
-set smartcase
 
 """"""""""""""""""""""""""""""
 " Coc.nvim specific settings "
