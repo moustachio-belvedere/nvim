@@ -8,7 +8,8 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " normal mode mappings
-nnoremap <Leader><cr> o<esc>k
+nnoremap <leader><cr> o<esc>k
+nnoremap <leader>l yyp<s-v>r-
 nnoremap <c-l> :silent! nohls<cr>
 nnoremap Y y$
 
