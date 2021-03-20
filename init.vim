@@ -27,12 +27,14 @@ set tabstop=2
 set shiftwidth=2
 set ignorecase
 set smartcase
+set incsearch
+set cmdheight=2
 
 " theme
 set guifont=Fira\ Code:h14
 syntax on
 colorscheme onedark 
-" highlight LineNr guifg=black
+highlight LineNr guifg=black
 highlight CursorLineNr guifg=pink
 au BufNewFile,BufRead *.txt set filetype=custext
 au BufNewFile,BufRead * set fileformat=unix
@@ -78,9 +80,6 @@ set hidden
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
-
-" Give more space for displaying messages.
-set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
