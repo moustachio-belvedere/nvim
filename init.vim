@@ -17,7 +17,7 @@ nnoremap Y y$
 imap <c-=> <esc>:w<CR>
 
 " editor settings
-set signcolumn=auto
+set signcolumn=auto " CoC suggests this as always on
 set number
 set relativenumber
 set numberwidth=1
@@ -87,15 +87,6 @@ set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
