@@ -29,6 +29,7 @@ set ignorecase
 set smartcase
 set incsearch
 set cmdheight=1
+set nrformats+=alpha " allow iterating through alphabet
 
 " theme
 set guifont=Fira\ Code:h14
