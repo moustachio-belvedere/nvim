@@ -17,7 +17,6 @@ nnoremap Y y$
 imap <c-=> <esc>:w<CR>
 
 " editor settings
-set signcolumn=auto " CoC suggests this as always on
 set number
 set relativenumber
 set numberwidth=1
@@ -28,11 +27,12 @@ set shiftwidth=2
 set ignorecase
 set smartcase
 set incsearch
-set cmdheight=1
 set nrformats+=alpha " allow iterating through alphabet
 
 " theme
 set guifont=Fira\ Code:h14
+set cmdheight=1
+set signcolumn=auto " CoC suggests this as always on
 syntax on " syntax highlighting
 set noshowmode " for lightline
 highlight LineNr guifg=black
@@ -62,7 +62,7 @@ let g:lightline = {
       \ },
       \ }
 
-" Selection of recommended Coc.nvim settings
+" selection of recommended Coc.nvim settings
 set hidden
 set nobackup
 set nowritebackup
