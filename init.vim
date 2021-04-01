@@ -5,6 +5,7 @@ Plug 'w0rp/ale'
 Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 " normal mode mappings
