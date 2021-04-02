@@ -3,7 +3,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'joshdick/onedark.vim'
 Plug 'w0rp/ale'
 Plug 'rust-lang/rust.vim'
-Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
@@ -38,7 +37,6 @@ set noshowmode " for lightline
 highlight LineNr guifg=black
 highlight CursorLineNr guifg=pink
 au BufNewFile,BufRead *.txt set filetype=custext
-au BufNewFile,BufRead * set fileformat=unix
 colorscheme onedark 
 
 if (empty($TMUX))
