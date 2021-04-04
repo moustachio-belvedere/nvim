@@ -9,7 +9,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 " normal mode mappings
-nnoremap <leader><cr> o<esc>k
+nnoremap <leader>o o<esc>k
 nnoremap <leader>l yyp<s-v>r-
 nnoremap <c-l> :silent! nohls<cr>
 nnoremap Y y$
