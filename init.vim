@@ -4,7 +4,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'w0rp/ale'
 Plug 'rust-lang/rust.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'JuliaEditorSupport/julia-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
