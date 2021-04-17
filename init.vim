@@ -1,9 +1,14 @@
 call plug#begin(stdpath('config') . '/plugged')
+" Linting / completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'joshdick/onedark.vim'
 Plug 'w0rp/ale'
-Plug 'rust-lang/rust.vim'
+
+" UI
+Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
+
+" Language packs
+Plug 'rust-lang/rust.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
