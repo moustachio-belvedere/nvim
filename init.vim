@@ -4,7 +4,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'w0rp/ale'
 
 " UI
-Plug 'joshdick/onedark.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'itchyny/lightline.vim'
 
 " Language packs
@@ -39,23 +39,10 @@ set guifont=Fira\ Code:h14
 set cmdheight=1
 set signcolumn=auto " CoC suggests this as always on
 syntax on " syntax highlighting
-set noshowmode " for lightline
-highlight LineNr guifg=black
-highlight CursorLineNr guifg=pink
 au BufNewFile,BufRead *.txt set filetype=custext
-colorscheme onedark 
-
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'one',
       \ 'active': {
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
@@ -65,6 +52,19 @@ let g:lightline = {
       \   'charvaluehex': '0x%B'
       \ },
       \ }
+
+colorscheme onehalflight
+set noshowmode " don't show mode in commandline, handled by lightline
+set cursorline
+
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
 
 " selection of recommended Coc.nvim settings
 set hidden
