@@ -42,7 +42,7 @@ syntax on " syntax highlighting
 au BufNewFile,BufRead *.txt set filetype=custext
 
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'OldHope',
       \ 'active': {
       \   'right': [ [ 'lineinfo' ],
       \              [ 'percent' ],
@@ -53,7 +53,7 @@ let g:lightline = {
       \ },
       \ }
 
-colorscheme onehalflight
+colorscheme onehalfdark
 set noshowmode " don't show mode in commandline, handled by lightline
 set cursorline
 
