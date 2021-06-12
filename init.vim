@@ -1,6 +1,5 @@
 call plug#begin(stdpath('config') . '/plugged')
 " Linting / completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'w0rp/ale'
 
 " UI
@@ -66,29 +65,3 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
-" selection of recommended Coc.nvim settings
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set shortmess+=c
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
-
-autocmd CursorHold * silent call CocActionAsync('highlight')
