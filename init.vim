@@ -1,7 +1,4 @@
 call plug#begin(stdpath('config') . '/plugged')
-" Linting / completion
-Plug 'w0rp/ale'
-
 " UI
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'itchyny/lightline.vim'
