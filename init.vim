@@ -17,6 +17,14 @@ nnoremap Y y$
 " insert mode mappings
 imap <c-=> <esc>:w<CR>
 
+" visual mode mappings
+" crude surrounder macros
+vnoremap <leader>" c"<c-r>""
+vnoremap <leader>` c`<c-r>"`
+vnoremap <leader>' c'<c-r>"'
+vnoremap <leader>( c(<c-r>)"
+vnoremap <leader>) c(<c-r>)"
+
 " editor settings
 set number
 set relativenumber
